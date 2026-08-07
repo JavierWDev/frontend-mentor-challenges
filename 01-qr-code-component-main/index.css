@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/Outfit-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root{
+    /* MediaQueries */
+    --mq-mobile: 375px;
+    --mq-desktop: 1440px;
+
+    /* Colors */
+    --white: hsl(0, 0%, 100%);
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+
+    /* Font */
+    --font-family: "Outfit", sans-serif;
+
+
+    /* FontSize */
+    --font-size: 15px;
+    --font-heading: 22px;
+
+    /* FontWeight */
+    --font-regular: 400;
+    --font-bold: 700;
+}
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--slate-300);
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family);
+}
+
+p{
+  text-align: center;
+  font-size: var(--font-size);
+  font-weight: var(--font-regular);
+}
+
+.container{
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+.container img{
+  border-radius: 8px;
+}
+
+.p-primary{
+  color: var(--slate-900);
+  font-weight: var(--font-bold);
+  font-size: var(--font-heading);
+}
+
+.p-secondary{
+  color: var(--slate-500);
+}
