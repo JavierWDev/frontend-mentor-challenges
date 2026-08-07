@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300 900;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/Figtree-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 300 900;
+}
+
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+
+    --font-size: 16px;
+
+    --font-family: "Figtree", sans-serif;
+
+    --mq-mobile: 375px;
+    --mq-desktop: 1440px;
+
+    --regular: 500;
+    --bold: 800;
+}
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background-color: var(--yellow);
+    font-family: var(--font-family);
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--regular);
+    font-size: clamp(0.875rem, var(--font-size), 1.125rem);
+}
+
+.container{
+    margin: 8px 0;
+    max-width: min(90dvw, 400px);
+    background-color: var(--white);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--gray-950);
+    padding: 20px;
+    gap: 12px;
+    box-shadow: 8px 8px 0 var(--gray-950) ;
+}   
+
+.hero-image{
+    border-radius: 8px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.inline-noaction-button{
+    margin: 4px 0;
+}
+
+.inline-noaction-button p{
+    background-color: var(--yellow);
+    color: var(--gray-950);
+    padding: 8px 12px;
+    font-weight: var(--bold);
+    display: inline-block;
+    border-radius: 8px;
+}
+
+h1{
+    padding: 10px 0;
+    font-weight: var(--bold);
+}
+
+.card-parragraph{
+    color: var(--gray-500);
+}
+
+.user-section{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 8px;
+}
+
+.user-section img{
+    max-width: 40px;
+}
+
+.user-section p{
+    font-weight: var(--bold);
+}
